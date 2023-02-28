@@ -1,0 +1,187 @@
+// unfocused accent
+$amber-300: #ffd54f;
+
+$amber-500: #ffc107;
+$amber-500-dark: #c79100;
+
+$grey-300: #e0e0e0;
+$grey-300-dark: #aeaeae;
+
+html {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font-size: 15px;
+}
+
+body,
+table {
+    font-family: Inter, sans-serif;
+}
+
+#root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    box-sizing: border-box;
+    margin-left: 16px;
+    margin-right: 16px;
+    display: grid;
+    padding-top: 24px;
+}
+
+#num-sols {
+    margin-top: 32px;
+}
+
+@media (min-width: 600px) {
+    main {
+        padding-top: 48px;
+        grid-auto-flow: column;
+        grid-column-gap: 48px;
+        grid-template-columns: 1fr 576px;
+    }
+
+    #num-col,
+    #sol-col,
+    #exp-col {
+        width: max-content;
+    }
+
+    #num-sols {
+        margin-top: 16px;
+        text-align: right;
+    }
+
+    table {
+        font-size: 15px;
+    }
+}
+
+#inputs {
+    margin-top: 24px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 8px;
+    grid-template-columns: repeat(5, min-content);
+}
+
+input {
+    font-family: monospace;
+    font-size: 22px;
+    padding: 10px;
+    width: 2ch;
+    text-align: center;
+    border-style: solid;
+    border-color: $amber-300;
+    border-radius: 8px;
+}
+
+.invalid {
+    border-color: red;
+}
+
+button {
+    margin-left: 8px;
+    background: $amber-500;
+    padding: 10px 20px;
+    font-size: 19px;
+    width: min-content;
+    border: 1px solid $amber-500-dark;
+    border-radius: 6px;
+    color: black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 14px;
+    table-layout: fixed;
+}
+
+thead {
+    border-bottom: 2px solid $grey-300;
+    vertical-align: middle;
+}
+
+th {
+    font-weight: 500;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 12px 16px 12px 12px;
+    box-sizing: border-box;
+}
+
+td {
+    border-bottom: 1px solid $grey-300;
+}
+
+th:first-of-type,
+td:first-of-type {
+    padding-left: 0;
+}
+th:last-of-type,
+td:last-of-type {
+    padding-right: 0;
+}
+
+.border-red {
+    border-color: red;
+}
+
+.disabled {
+    background: $grey-300;
+    border-color: $grey-300-dark;
+}
+
+td {
+    vertical-align: top;
+}
+
+.num-col {
+    width: 48px;
+    text-align: right;
+}
+
+.sol-col {
+    width: 192px;
+}
+
+.exp-col {
+    width: 120px;
+    overflow: hidden;
+}
+
+// hide numeric input arrows
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+sup {
+    font-size: 12px;
+}
+
+#no-sol-cell {
+    padding-top: 24px;
+    text-align: center;
+    border-bottom: none;
+}

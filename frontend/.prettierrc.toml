@@ -1,0 +1,6 @@
+trailingComma = "all"
+useTab = true
+tabWidth = 4
+semi = true
+singleQuote = false
+jsxSingleQuote = false

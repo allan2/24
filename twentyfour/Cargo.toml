@@ -1,0 +1,14 @@
+[package]
+name = "twentyfour"
+description = "A solver for the 24 card game"
+authors = ["Allan Zhang <al@ayz.ai>", "Dan Kaplun <bkaplun@gmail.com"]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+homepage = "https://github.com/allan2/24"
+readme = "README.md"
+keywords = ["24", "solver", "twenty", "twenty-four", "game"]
+repository = "https://github.com/allan2/24"
+
+[dependencies]
+itertools = "0.10"

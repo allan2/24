@@ -1,0 +1,16 @@
+[package]
+name = "twentyfour-dist"
+version = "0.1.0"
+edition = "2021"
+authors = ["Allan Zhang <al@ayz.ai>"]
+license = "MIT"
+publish = false
+
+[dependencies]
+twentyfour = { path = "../twentyfour" }
+csv = "1"
+chrono = "0.4"
+
+[profile.release]
+lto = true
+opt-level = 's'

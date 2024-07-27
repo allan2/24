@@ -3,7 +3,7 @@
 [![Crates.io](https://img.shields.io/crates/v/twentyfour.svg)](https://crates.io/crates/twentyfour)
 [![docs](https://img.shields.io/docsrs/twentyfour?logo=docs.rs)](https://docs.rs/twentyfour/)
 
-A solver for the 24 card game. https://ayz.ai/24
+A solver for the 24 card game
 
 The objective of the game is to find a way to combine four positive integers using arithmetic operations to obtain a target (the number 24).
 Exponentiation is supported.
